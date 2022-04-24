@@ -1,0 +1,130 @@
+@use '../variables' as *;
+
+//* ============================
+//* == Button ==================
+//* ============================
+.button {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-width: 64px;
+  border-radius: 4px;
+  outline: 0px;
+  font-weight: 500;
+  line-height: 1.75;
+  text-decoration: none;
+  vertical-align: middle;
+  letter-spacing: 0.02857em;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: $button-transition;
+  appearance: none;
+}
+
+//* ============================
+//* == Button Colors ===========
+//* ============================
+.button--primary {
+  border: 1px solid rgba(75, 164, 241, 0.5);
+  color: rgb(75, 164, 241);
+  background-color: rgb(75, 164, 241);
+
+  &.button--filled {
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &:hover {
+    background-color: rgba(75, 164, 241, 0.08);
+
+    &.button--filled {
+      background-color: rgb(52, 114, 168);
+      box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+    }
+
+    &.button--outlined {
+      border: 1px solid rgb(75, 164, 241);
+    }
+  }
+}
+
+//* ============================
+//* == Button Variants =========
+//* ============================
+.button--text {
+  border: 0px;
+  background-color: transparent;
+}
+
+.button--filled {
+  border: 0px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+.button--outlined {
+  background-color: transparent;
+}
+
+//* ============================
+//* == Button Sizes ============
+//* ============================
+.button--sm {
+  font-size: 0.8125rem;
+
+  &.button--text {
+    padding: 4px 5px;
+  }
+
+  &.button--filled {
+    padding: 4px 10px;
+  }
+
+  &.button--outlined {
+    padding: 3px 9px;
+  }
+}
+
+.button--md {
+  font-size: 0.875rem;
+
+  &.button--text {
+    padding: 6px 8px;
+  }
+
+  &.button--filled {
+    padding: 6px 16px;
+  }
+
+  &.button--outlined {
+    padding: 5px 15px;
+  }
+}
+
+.button--lg {
+  font-size: 0.9375rem;
+
+  &.button--text {
+    padding: 8px 11px;
+  }
+
+  &.button--filled {
+    padding: 8px 22px;
+  }
+
+  &.button--outlined {
+    padding: 7px 21px;
+  }
+}
+
+// .css-a4d3am {
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+// }
+
+// .css-yd89q5 {
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+// }
+
+// .css-1a63722 {
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+// }

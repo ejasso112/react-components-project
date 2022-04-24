@@ -1,0 +1,52 @@
+.rcp-components {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-block: 1rem;
+  overflow-y: scroll;
+}
+
+.rcp-components__content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.rcp-components__content::after {
+  content: '';
+  display: block;
+  height: 3rem;
+}
+
+.rcp-components__sample {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border: 0.0625rem solid var(--bg-color-500);
+  border-radius: 0.5rem;
+}
+
+.rcp-components__code {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-color-500);
+}
+
+.rcp-components__code .tag {
+  color: var(--code-tag-color);
+}
+
+.rcp-components__code .class-name {
+  color: var(--code-class-name-color);
+}
+
+.rcp-components__code .attr-name {
+  color: var(--code-attr-name-color);
+}
+
+.rcp-components__code .attr-value {
+  color: var(--code-attr-value-color);
+}
+
+.rcp-components__code .punctuation {
+  color: inherit;
+}
